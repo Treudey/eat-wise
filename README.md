@@ -2,7 +2,7 @@
 Food and Nutrition Application. Project One for Full Stack Web Development Bootcamp. Developed by Pineapple on Pizza (also known as Team 2).
 
 ## Site
-https://amandat85.github.io/eat-wise/
+https://treudey.github.io/eat-wise/
 
 ## Languages and Tools Used
 * HTML
@@ -15,20 +15,7 @@ https://amandat85.github.io/eat-wise/
 * Font Awesome
 * Google Fonts
 * Firebase
-* API
-
-## Requirements
-- [x] Two APIs
-- [x] AJAX Pull
-- [x] New Library or Technology
-- [x] Polished UI
-- [x] Good Coding Standards
-- [x] No alerts, confirms or prompts
-- [x] Repeating Element
-- [x] Bootstrap or Alternative CSS Framework
-- [x] User Input Validation
-- [x] Mobile Responsiveness
-- [x] Deployed on Github Pages
+* APIs
 
 ## How it works
 * Users select from a list of diertary requirements including: meal time, diet, intolerances, cuisine, and enter their city.
