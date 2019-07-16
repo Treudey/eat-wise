@@ -1,6 +1,8 @@
 // API CALLS CONTROLLER
 var APIController = (function() {
     // All javascript dealing with Zomato and Spoonacular APIs goes here
+
+    // An array of all cuisine IDs for use in Zomato restaurant queries
     var zomatoCuisineArray = [
         {
             "cuisine_id": 152,

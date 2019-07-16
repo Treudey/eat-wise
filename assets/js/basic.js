@@ -3,11 +3,11 @@ function main() {
 }
 
 function onUIControllerLoaded() {
-    generalFunctions.loadScript("./assets/javascript/disclaimerModal.js", main);
+    generalFunctions.loadScript("./assets/js/disclaimerModal.js", main);
 }
 
 function onjQueryLoaded() {
-    generalFunctions.loadScript("./assets/javascript/UI.js", onUIControllerLoaded);
+    generalFunctions.loadScript("./assets/js/UI.js", onUIControllerLoaded);
 }
 
 function loadAllScripts() {
