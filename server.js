@@ -5,17 +5,27 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-const adminRoutes = require('./routes/admin');
-const shopRoutes = require('./routes/shop');
-
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/admin', adminRoutes);
-app.use(shopRoutes);
-
-app.use((req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
+
+app.get('/about', (req, res) => {
+	res.sendFile(path.join(__dirname, 'views', 'about.html'));
+});
+
+app.get('/blog', (req, res) => {
+	res.sendFile(path.join(__dirname, 'views', 'blog.html'));
+});
+
+app.get('/contact', (req, res) => {
+	res.sendFile(path.join(__dirname, 'views', 'contact.html'));
+});
+
+// app.use((req, res) => {
+//   res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+// });
 
 app.listen(3000);

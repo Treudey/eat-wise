@@ -129,7 +129,7 @@ var UIController = (function () {
             $(selector).closest(DOMStrings.modal).toggleClass("show").css("display", "block");
         },
         hideModal: function(selector) {
-            $(selector).closest(DOMstrings.modal).toggleClass("show").css("display", "none");
+            $(selector).closest(DOMStrings.modal).toggleClass("show").css("display", "none");
         }
     }
 })();

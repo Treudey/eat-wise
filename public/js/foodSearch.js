@@ -90,15 +90,15 @@ var foodSearch = (function() {
 })();
 
 function onAPIControllerLoaded() {
-    generalFunctions.loadScript("./assets/javascript/disclaimerModal.js", foodSearch.init);
+    generalFunctions.loadScript("/js/disclaimerModal.js", foodSearch.init);
 }
 
 function onFirebaseControllerLoaded() {
-    generalFunctions.loadScript("./assets/javascript/apis.js", onAPIControllerLoaded);
+    generalFunctions.loadScript("/js/apis.js", onAPIControllerLoaded);
 }
 
 function onFirebaseAppLoaded() {
-    generalFunctions.loadScript("./assets/javascript/firebase.js", onFirebaseControllerLoaded);
+    generalFunctions.loadScript("/js/firebase.js", onFirebaseControllerLoaded);
 }
 
 function onUIControllerLoaded() {
@@ -106,7 +106,7 @@ function onUIControllerLoaded() {
 }
 
 function onjQueryLoaded() {
-    generalFunctions.loadScript("./assets/javascript/UI.js", onUIControllerLoaded);
+    generalFunctions.loadScript("/js/UI.js", onUIControllerLoaded);
 }
 
 function loadAllScripts() {
