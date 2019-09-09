@@ -2,9 +2,11 @@
   "name": "eat-wise",
   "version": "1.0.0",
   "description": "Food and Nutrition Application - Project One",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+    "start": "nodemon server.js",
+    "start-server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,12 @@
   },
   "homepage": "https://github.com/amandat85/eat-wise#readme",
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }
