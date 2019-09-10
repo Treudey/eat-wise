@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
-    "start": "nodemon server.js",
-    "start-server": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
