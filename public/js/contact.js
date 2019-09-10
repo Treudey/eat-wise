@@ -22,11 +22,11 @@ var contactPageController = (function() {
 })();
 
 function onUIControllerLoaded() {
-    generalFunctions.loadScript("./assets/javascript/disclaimerModal.js", contactPageController.init);
+    generalFunctions.loadScript("/js/disclaimerModal.js", contactPageController.init);
 }
 
 function onjQueryLoaded() {
-    generalFunctions.loadScript("./assets/javascript/UI.js", onUIControllerLoaded);
+    generalFunctions.loadScript("/js/UI.js", onUIControllerLoaded);
 }
 
 function loadAllScripts() {
