@@ -1,0 +1,94 @@
+[
+  {
+    "cuisine_id": 152,
+    "cuisine_name": "African"
+  },
+  {
+    "cuisine_id": 25,
+    "cuisine_name": "Chinese"
+  },
+  {
+    "cuisine_id": 60,
+    "cuisine_name": "Japanese"
+  },
+  {
+    "cuisine_id": 67,
+    "cuisine_name": "Korean"
+  },
+  {
+    "cuisine_id": 99,
+    "cuisine_name": "Vietnamese"
+  },
+  {
+    "cuisine_id": 95,
+    "cuisine_name": "Thai"
+  },
+  {
+    "cuisine_id": 148,
+    "cuisine_name": "Indian"
+  },
+  {
+    "cuisine_id": 133,
+    "cuisine_name": "British"
+  },
+  {
+    "cuisine_id": 135,
+    "cuisine_name": "Irish"
+  },
+  {
+    "cuisine_id": 45,
+    "cuisine_name": "French"
+  },
+  {
+    "cuisine_id": 55,
+    "cuisine_name": "Italian"
+  },
+  {
+    "cuisine_id": 73,
+    "cuisine_name": "Mexican"
+  },
+  {
+    "cuisine_id": 89,
+    "cuisine_name": "Spanish"
+  },
+  {
+    "cuisine_id": 137,
+    "cuisine_name": "Middle Eastern"
+  },
+  {
+    "cuisine_id": 265,
+    "cuisine_name": "Jewish"
+  },
+  {
+    "cuisine_id": 1,
+    "cuisine_name": "American"
+  },
+  {
+    "cuisine_id": 491,
+    "cuisine_name": "Cajun"
+  },
+  {
+    "cuisine_id": 471,
+    "cuisine_name": "Southern"
+  },
+  {
+    "cuisine_id": 156,
+    "cuisine_name": "Greek"
+  },
+  {
+    "cuisine_id": 134,
+    "cuisine_name": "German"
+  },
+  {
+    "cuisine_id": 651,
+    "cuisine_name": "Eastern European"
+  },
+  {
+    "cuisine_id": 158,
+    "cuisine_name": "Caribbean"
+  },
+  {
+    "cuisine_id": 136,
+    "cuisine_name": "Latin American"
+  }
+]
