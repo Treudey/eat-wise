@@ -1,46 +1,26 @@
-module.exports = (app) => {
-  // Routes for Handlebars (HOLLY)
-  app.get('/', (req, res) => {
-    let ratingFilter = req.query.filter;
+const path = require('path');
 
-    if (!ratingFilter) {
-      ratingFilter = 'all';
-    }
+const express = require('express');
 
-    res.render('index', {
-      title: 'Time to Go Toronto',
-      rating: ratingFilter,
-    });
-  });
+const rootDir = require('../util/path');
 
-  app.get('/about', (req, res) => {
-    res.render('about', {
-      title: 'How it works',
-    });
-  });
+const router = express.Router();
 
-  app.get('/add', (req, res) => {
-    res.render('add', {
-      title: 'Rate a Washroom',
-    });
-  });
+router.get('/', (req, res) => {
+	res.sendFile(path.join(rootDir, 'views', 'index.html'));
+});
 
-  app.use((req, res) => {
-    res.status(404).render('404', {
-      title: 'Page Not Found',
-    });
-  });
+router.get('/about', (req, res) => {
+	res.sendFile(path.join(rootDir, 'views', 'about.html'));
+});
 
-  // For later intigration of Login Pages
-  // app.get('/newuser', (req, res) => {
-  //   res.render('newuser');
-  // });
+router.get('/blog', (req, res) => {
+	res.sendFile(path.join(rootDir, 'views', 'blog.html'));
+});
 
-  // app.get('/login', (req, res) => {
-  //   res.render('login');
-  // });
+router.get('/contact', (req, res) => {
+	res.sendFile(path.join(rootDir, 'views', 'contact.html'));
+});
 
-  // app.get('/rate', (req, res) => {
-  //   res.render('rate');
-  // });
-};
+
+module.exports = router;

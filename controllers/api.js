@@ -103,7 +103,6 @@ exports.getRecipeIds = (req, res) =>{
   })
   .then(result => {
     const response = result.data;
-    console.log(response);
     const recipeIdArr = [];
     for (let i = 0; i < response.results.length; i++) {
       recipeIdArr.push(response.results[i].id);
@@ -128,7 +127,6 @@ exports.getRecipeInfo = (req, res) => {
     })
     .then(result => {
       const response = result.data;
-      console.log(response)
       const recipeInfo = {
           title: response.title,
           image: response.image,
