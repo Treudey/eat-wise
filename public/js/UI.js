@@ -14,9 +14,12 @@ var UIController = (function () {
         logoutBtn: '#logout',
         startBtn: '.started',
         infoBtn: '#info',
+        alertCity: '#alertCity',
+        alertCuisine: '#alertCuisine',
+        alertDiet: '#alertDiet',
+        alertMeal: '#alertMeal',
         modal: '.modal',
         disclaimer: '#disclaimer',
-        closeDisclaimer: '#closeDisclaimer',
         closeModal: '.closeModal',
         searchAgainBtn: '#searchAgain',
         submitInfoBtn: '.submit'

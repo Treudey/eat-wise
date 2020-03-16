@@ -10,7 +10,13 @@ var contactPageController = (function() {
             UIController.getContactInput();
         });
 
-        disclaimerModalController.addModalEventListeners();
+        $(DOM.infoBtn).on("click", function() {
+          UIController.showModal(DOM.disclaimer);
+        });
+
+        $(DOM.closeModal).on("click", function() {
+          UIController.hideModal(this);
+      });
     }
 
 
@@ -21,12 +27,8 @@ var contactPageController = (function() {
     }
 })();
 
-function onUIControllerLoaded() {
-    generalFunctions.loadScript("/js/disclaimerModal.js", contactPageController.init);
-}
-
 function onjQueryLoaded() {
-    generalFunctions.loadScript("/js/UI.js", onUIControllerLoaded);
+    generalFunctions.loadScript("/js/UI.js", contactPageController.init);
 }
 
 function loadAllScripts() {

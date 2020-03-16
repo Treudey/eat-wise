@@ -23,6 +23,7 @@ exports.getCity = (req, res) => {
     if (response.location_suggestions.length > 0) {
       cityId = response.location_suggestions[0].entity_id;
     } else {
+      console.log('Couldn\'t find city')
       cityId = false;
     }
     res.json(cityId);

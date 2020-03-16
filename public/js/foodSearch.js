@@ -6,16 +6,18 @@ var foodSearch = (function() {
     function setUpEventListeners() {
         var DOM = UIController.getDOMStrings();
 
-        disclaimerModalController.addModalEventListeners();
-
         $(DOM.searchBtn).on("click", validateUserInput);
 
         $(DOM.startBtn).on("click", UIController.displaySearchPage);
 
         $(DOM.searchAgainBtn).on("click", UIController.displaySearchPage);
 
+        $(DOM.infoBtn).on("click", function() {
+          UIController.showModal(DOM.disclaimer);
+        });
+
         $(DOM.closeModal).on("click", function() {
-			UIController.hideModal(this);
+			      UIController.hideModal(this);
         });
     }
 
@@ -46,7 +48,7 @@ var foodSearch = (function() {
     }
 
     function performFoodSearch(cityid) {
-
+        console.log(cityid);
         if (cityid) {
           // If the city the user inputed exists in Zomato execute the rest of the search app
           // 1. We add the search data to local storage and to firebase for future use
@@ -86,12 +88,8 @@ var foodSearch = (function() {
     }
 })();
 
-function onAPIControllerLoaded() {
-    generalFunctions.loadScript("/js/disclaimerModal.js", foodSearch.init);
-}
-
 function onFirebaseControllerLoaded() {
-    generalFunctions.loadScript("/js/apis.js", onAPIControllerLoaded);
+    generalFunctions.loadScript("/js/apis.js", foodSearch.init);
 }
 
 function onFirebaseAppLoaded() {

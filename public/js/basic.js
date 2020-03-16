@@ -1,9 +1,13 @@
-function main() {
-    disclaimerModalController.addModalEventListeners();
-}
-
 function onUIControllerLoaded() {
-    generalFunctions.loadScript("/js/disclaimerModal.js", main);
+  var DOM = UIController.getDOMStrings();
+
+  $(DOM.infoBtn).on("click", function() {
+    UIController.showModal(DOM.disclaimer);
+  });
+
+  $(DOM.closeModal).on("click", function() {
+    UIController.hideModal(this);
+});
 }
 
 function onjQueryLoaded() {

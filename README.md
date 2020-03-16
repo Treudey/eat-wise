@@ -5,17 +5,20 @@ Food and Nutrition Application. Project One for Full Stack Web Development Bootc
 https://treudey.github.io/eat-wise/
 
 ## Languages and Tools Used
-* HTML
-* Bootstrap
+* Node.js
+* Express.js
+* axios
 * Javascript
 * jQuery
+* HTML
 * CSS
+* Bootstrap
 * SASS
 * AJAX
-* Font Awesome
-* Google Fonts
 * Firebase
 * APIs
+* Font Awesome
+* Google Fonts
 
 ## How it works
 * Users select from a list of diertary requirements including: meal time, diet, intolerances, cuisine, and enter their city.

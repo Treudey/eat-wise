@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amandat85/eat-wise.git"
+    "url": "git+https://github.com/Treudey/eat-wise.git"
   },
   "author": "Pineapple on Pizza",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amandat85/eat-wise/issues"
+    "url": "https://github.com/Treudey/eat-wise/issues"
   },
-  "homepage": "https://github.com/amandat85/eat-wise#readme",
+  "homepage": "https://github.com/Treudey/eat-wise#readme",
   "devDependencies": {
     "node-sass": "^4.11.0",
     "nodemon": "^1.19.2"
