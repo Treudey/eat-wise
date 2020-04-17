@@ -2,7 +2,7 @@
 Food and Nutrition Application. Project One for Full Stack Web Development Bootcamp. Developed by Pineapple on Pizza (also known as Team 2).
 
 ## Site
-https://treudey.github.io/eat-wise/
+https://eat-wise.herokuapp.com/
 
 ## Languages and Tools Used
 * Node.js
