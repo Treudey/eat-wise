@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Treudey/eat-wise#readme",
   "devDependencies": {
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.19.2"
   },
   "dependencies": {
